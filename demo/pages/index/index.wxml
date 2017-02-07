@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" bindtap="bindViewTap"></image>
+    <text>{{userInfo.nickName}}</text>
+  </view>
+
+  <template name="foo">
+    <view class="usermotto" bindlongtap="bindViewTap" hover="true">
+      <text >{{info}}</text>
+    </view>
+  </template>
+  
+  <template is="foo" data="{{info: motto}}"/>
+</view>

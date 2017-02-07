@@ -1,0 +1,55 @@
+<view class="container">
+    <view class="flex-section">
+        <text>justify-content: flex-start</text>
+        <view class="flex-items" style="justify-content: flex-start;">
+            <view class="flex-item bc_red"></view>
+            <view class="flex-item bc_green"></view>
+            <view class="flex-item bc_blue"></view>
+        </view>
+    </view>
+
+    <view class="flex-section">
+        <text>justify-content: flex-end</text>
+        <view class="flex-items" style="justify-content: flex-end;">
+            <view class="flex-item bc_red"></view>
+            <view class="flex-item bc_green"></view>
+            <view class="flex-item bc_blue"></view>
+        </view>
+    </view>
+
+    <view class="flex-section">
+        <text>justify-content: center</text>
+        <view class="flex-items" style="justify-content: center;">
+            <view class="flex-item bc_red"></view>
+            <view class="flex-item bc_green"></view>
+            <view class="flex-item bc_blue"></view>
+        </view>
+    </view>
+
+    <view class="flex-section">
+        <text>justify-content: space-between</text>
+        <view class="flex-items" style="justify-content: space-between;">
+            <view class="flex-item bc_red"></view>
+            <view class="flex-item bc_green"></view>
+            <view class="flex-item bc_blue"></view>
+        </view>
+    </view>
+
+    <view class="flex-section">
+        <text>justify-content: space-around</text>
+        <view class="flex-items" style="justify-content: space-around;">
+            <view class="flex-item bc_red"></view>
+            <view class="flex-item bc_green"></view>
+            <view class="flex-item bc_blue"></view>
+        </view>
+    </view>
+
+    <view class="flex-section">
+        <text>align-items: center 垂直居中</text>
+        <view class="flex-items" style="justify-content: space-around; height: 200rpx; align-items: center;">
+            <view class="flex-item bc_red"></view>
+            <view class="flex-item bc_green"></view>
+            <view class="flex-item bc_blue"></view>
+        </view>
+    </view>
+</view>

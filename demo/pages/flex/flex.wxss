@@ -1,0 +1,37 @@
+.container {
+    background-color: #EEE;
+}
+
+.flex-section {
+    width: 100%;
+    margin-bottom: 10rpx;
+    background-color: white;
+    box-sizing: border-box; /* 很重要 */
+    padding: 10rpx;
+}
+.flex-section:last-child {
+    margin-bottom: 0;
+}
+
+.flex-items {
+    display: flex; 
+    flex-direction: row;
+    margin-top: 10rpx;
+}
+
+.flex-item {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.bc_red {
+    background-color: #E68C23;
+}
+
+.bc_green {
+    background-color: #FCEB62;
+}
+
+.bc_blue {
+    background-color: #1DAF94;
+}
