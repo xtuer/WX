@@ -1,0 +1,26 @@
+<view style="padding: 10rpx;">
+    <view class="section">
+        <view class="section__title">水平滚动</view>
+        <scroll-view id="horizontal-scroll-view" scroll-x="true">
+            <view class="scroll-view-item bc_green"></view>
+            <view class="scroll-view-item bc_red"></view>
+            <view class="scroll-view-item bc_yellow"></view>
+            <view class="scroll-view-item bc_blue"></view>
+        </scroll-view>
+    </view>
+
+    <view class="section">
+        <view class="section__title">垂直滚动</view>
+        <scroll-view id="vertical-scroll-view" scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+            <view id="green" class="scroll-view-item bc_green"></view>
+            <view id="red" class="scroll-view-item bc_red"></view>
+            <view id="yellow" class="scroll-view-item bc_yellow"></view>
+            <view id="blue" class="scroll-view-item bc_blue"></view>
+        </scroll-view>
+    </view>
+
+    <view class="btn-area">
+        <button size="mini" bindtap="tap">click me to scroll into view</button>
+        <button size="mini" bindtap="tapMove">click me to scroll</button>
+    </view>
+</view>

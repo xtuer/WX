@@ -1,0 +1,48 @@
+/* 水平滚动 */
+#horizontal-scroll-view {
+    height: 150px;
+    white-space: nowrap; /* 很重要，否则会换行 */
+}
+
+#horizontal-scroll-view .scroll-view-item {
+    width: 300rpx;
+    height: 100%;
+    display: inline-block;
+}
+
+/* 垂直滚动 */
+#vertical-scroll-view {
+    height: 150px;
+    font-size: 0; /* 去掉 item 之间的空白，因为有一个空格 */
+}
+
+#vertical-scroll-view .scroll-view-item {
+    width: 100%;
+    height: 200rpx;
+    display: inline-block;
+}
+
+/* 其他 */
+.section {
+    margin-bottom: 8rpx;
+}
+
+button {
+    width: 100%;
+}
+
+.bc_red {
+    background-color: #34A7FF;
+}
+
+.bc_green {
+    background-color: #2FC9E8;
+}
+
+.bc_blue {
+    background-color: #41FFEC;
+}
+
+.bc_yellow {
+    background-color: #2FE8A1;
+}
