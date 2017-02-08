@@ -1,4 +1,9 @@
-/* pages/swiper/swiper.wxss */
-.slide-image {
-    width: 100%;
+slider {
+    flex: 1;
+}
+
+.slider-box {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
 }

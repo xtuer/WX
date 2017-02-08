@@ -1,0 +1,31 @@
+.page__bd {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+}
+.icon-box {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-box__ctn {
+    flex-shrink: 100;
+    margin-left: 13px;
+}
+.icon-box__title {
+    font-size: 20px;
+}
+
+.icon-box__desc {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #888888;
+}
+
+.icon_sp_area {
+    margin-top: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+}

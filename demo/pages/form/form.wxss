@@ -1,0 +1,12 @@
+.section {
+    margin-bottom: 20rpx;
+}
+
+radio-group label, checkbox-group label {
+    display: block;
+}
+
+input {
+    border: 1rpx solid #EEE;
+    border-radius: 4rpx;
+}

@@ -1,18 +1,21 @@
 {
   "pages":[
+    "pages/form/form",
+    "pages/swiper/swiper",
+    "pages/icon/icon",
     "pages/index/index",
     "pages/scroll/scroll",
     
     "pages/picker/picker",
     "pages/multiply/multiply",
-    "pages/swiper/swiper",
+    
     "pages/flex/flex",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#444",
-    "navigationBarTitleText": "滚动",
+    "navigationBarTitleText": "表单",
     "navigationBarTextStyle":"#eee",
     "backgroundColor": "#999"
   }
