@@ -1,0 +1,10 @@
+@import "/wxParse/wxParse.wxss"; /* [0] */
+
+.title-view {
+    display: flex; 
+    justify-content: center; 
+    font-weight: bold; 
+    font-size: 40rpx; 
+    padding: 10rpx;
+    border-bottom: 1rpx solid #CCC; 
+}

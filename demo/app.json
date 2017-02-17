@@ -1,5 +1,8 @@
 {
   "pages":[
+    "pages/html/html",
+    "pages/video/video",
+    "pages/audio/audio",
     "pages/form/form",
     "pages/swiper/swiper",
     "pages/icon/icon",
@@ -15,7 +18,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#444",
-    "navigationBarTitleText": "表单",
+    "navigationBarTitleText": "显示 HTML",
     "navigationBarTextStyle":"#eee",
     "backgroundColor": "#999"
   }

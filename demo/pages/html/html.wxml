@@ -1,0 +1,10 @@
+<!-- [3] -->
+<import src="../../wxParse/wxParse.wxml" /> 
+
+<view>
+    <view class="title-view">小程序中渲染 HTML</view>
+    <view style="padding: 10rpx;">
+        <!-- [4] -->
+        <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+</view>

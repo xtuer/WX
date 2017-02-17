@@ -1,42 +1,42 @@
-<view style="padding: 10rpx;">
-    <form catchsubmit="submit">
-        <view class="section">
-            <view>名字:</view>
-            <input name="name" placeholder="名字"/>
-        </view>
 
-        <view class="section">
-            <view>性别:</view>
-            <radio-group name="gender">
-                <label><radio value="男"/>男</label>
-                <label><radio value="女"/>女</label>
-                <label><radio value="其他"/>其他</label>
-            </radio-group>
-        </view>
+<form catchsubmit="submit">
+    <view class="section">
+        <view>名字:</view>
+        <input name="name" placeholder="名字" password/>
+    </view>
 
-        <view class="section">
-            <view>年龄:</view>
-            <slider name="age" value="18" show-value/>
-        </view>
+    <!-- radio button 要放在 radio-group 里，且在 radio-group 中定义 name 和捕捉事件-->
+    <view class="section">
+        <view>性别:</view>
+        <radio-group name="gender">
+            <label><radio value="男" checked/>男</label>
+            <label><radio value="女"/>女</label>
+        </radio-group>
+    </view>
 
-        <view class="section">
-            <view>技术:</view>
-            <checkbox-group name="technology">
-                <label><checkbox value="Java"/>Java</label>
-                <label><checkbox value="C++"/>C++</label>
-                <label><checkbox value="PHP"/>PHP</label>
-                <label><checkbox value="Python"/>Python</label>
-            </checkbox-group>
-        </view>
+    <view class="section">
+        <view>年龄:</view>
+        <slider name="age" value="18" min="1" max="120" show-value/>
+    </view>
 
-        <view class="section">
-            <view>公开:</view>
-            <switch name="isPublic"/>
-        </view>
+    <!-- 和 radio 相似-->
+    <view class="section">
+        <view>技术:</view>
+        <checkbox-group name="technology">
+            <label><checkbox value="Java"/>Java</label>
+            <label><checkbox value="C++"/>C++</label>
+            <label><checkbox value="PHP"/>PHP</label>
+            <label><checkbox value="Python"/>Python</label>
+        </checkbox-group>
+    </view>
 
-        <view class="button-area">
-            <button form-type="submit" type="primary">提交</button>
-            <button form-type="reset">重置</button>
-        </view>
-    </form>
-</view>
+    <view class="section">
+        <view>公开:</view>
+        <switch name="isPublic"/>
+    </view>
+
+    <view class="button-area">
+        <button form-type="submit" type="primary">提交</button>
+        <button form-type="reset">重置</button>
+    </view>
+</form>

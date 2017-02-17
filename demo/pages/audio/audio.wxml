@@ -1,0 +1,12 @@
+<audio  poster="{{poster}}"
+        name="{{name}}
+        author="{{author}}"
+        src="{{src}}"
+        id="myAudio"
+        bindtimeupdate="timeUpdate"
+        controls/>
+
+<button type="primary" bindtap="play">播放</button>
+<button type="default" bindtap="pause">暂停</button>
+<button type="default" bindtap="start">回到开头</button>
+<button type="default" bindtap="seconds14">设置当前播放时间为 14 秒</button>

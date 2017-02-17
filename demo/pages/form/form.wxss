@@ -1,3 +1,8 @@
+page {
+    padding: 10rpx;
+    box-sizing: border-box;
+}
+
 .section {
     margin-bottom: 20rpx;
 }

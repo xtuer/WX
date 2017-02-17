@@ -1,0 +1,4 @@
+audio {
+    width: 750rpx;
+    display: block;
+}
