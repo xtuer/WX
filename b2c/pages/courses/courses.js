@@ -1,19 +1,28 @@
-// pages/courses/courses.js
+var URLs = require('../../utils/urls.js').URLs;
+var MOC = require('../../utils/moc.js').MOC;
+var Util = require('../../utils/util.js');
+
 Page({
-  data:{},
-  onLoad:function(options){
-    // 页面初始化 options为页面跳转所带来的参数
-  },
-  onReady:function(){
-    // 页面渲染完成
-  },
-  onShow:function(){
-    // 页面显示
-  },
-  onHide:function(){
-    // 页面隐藏
-  },
-  onUnload:function(){
-    // 页面关闭
-  }
-})
+    data: {
+        courses: MOC.coursesOfCategory
+    },
+    onLoad: function(options) {
+        var x = MOC.dev ? '' : this.init(options);
+        wx.setNavigationBarTitle({title: '课程列表 - ' + options.categoryName});
+    },
+    init: function(options) {
+        var self = this;
+        var url = Util.formatString(URLs.REST_COURSES_OF_CATEGORY, {categoryId: options.categoryId});
+
+        // 请求目录 categoryId 下的所有课程
+        wx.request({
+            url: url,
+            success: function(response) {
+                var result = response.data;
+                if (result.success) {
+                    self.setData({courses: result.data});
+                }
+            }
+        });
+    }
+});

@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
     <!-- 轮播图 -->
-    <swiper indicator-dots="{{true}}" circular="{{true}}" autoplay="{{false}}" interval="2000" duration="1000">
+    <swiper indicator-dots="{{true}}" circular="{{true}}" autoplay="{{true}}" interval="2000" duration="1000">
         <swiper-item wx:for="{{banners}}" wx:for-item="banner" wx:key="{{banner.bannerId}}">
             <navigator url="/pages/course/course?courseId=1">
                 <image src="{{banner.url}}" class="slide-image" mode="aspectFill" style="width: 100%;"/>
@@ -12,7 +12,9 @@
     <view class="category" wx:for-items="{{categories}}" wx:for-item="category" wx:key="{{category.categoryId}}">
         <!-- 目录的名字 -->
         <view class="category-name-bar">
-            <view class="category-name">{{category.categoryName}}</view>
+            <navigator url="/pages/courses/courses?categoryId={{category.categoryId}}&categoryName={{category.categoryName}}">
+                <view class="category-name">{{category.categoryName}}</view>
+            </navigator>
         </view>
         <!-- 同一个目录下的前 4 个课程 -->
         <view class="courses">

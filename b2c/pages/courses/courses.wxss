@@ -1,1 +1,34 @@
-/* pages/courses/courses.wxss */
+.courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10rpx 20rpx;
+}
+
+.course {
+    width: 50%;
+    /*float: left;*/
+    padding: 10rpx 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.course:nth-child(even) {
+    padding-left: 10rpx;
+}
+
+.course:nth-child(odd) {
+    padding-right: 10rpx;
+}
+
+.course-cover {
+    width: 345rpx;
+    height: 200rpx;
+}
+
+.course-name {
+    display: block;
+    font-size: 30rpx;
+    box-sizing: border-box;
+}
