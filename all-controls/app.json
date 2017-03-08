@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/example/index",
     "pages/others/others",
     "pages/others/commodity_attr/commodity_attr",
     "pages/others/calendar/calendar",
@@ -21,7 +22,7 @@
     "pages/others/drawer/drawer",
     "pages/others/comment/comment",
     "pages/others/marquee/marquee",
-    "pages/example/index",
+    
     "pages/example/button/button",
     "pages/example/list/list",
     "pages/example/input/input",
@@ -60,16 +61,16 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/others/others",
-        "text": "自定义组件",
-        "iconPath": "images/icon_classify.png",
-        "selectedIconPath": "images/icon_classify_select.png"
-      },
-      {
         "pagePath": "pages/example/index",
         "text": "WEUI",
         "iconPath": "images/icon_home.png",
         "selectedIconPath": "images/icon_home_select.png"
+      },
+      {
+        "pagePath": "pages/others/others",
+        "text": "自定义组件",
+        "iconPath": "images/icon_classify.png",
+        "selectedIconPath": "images/icon_classify_select.png"
       }
     ],
     "color": "#c6c6c6",

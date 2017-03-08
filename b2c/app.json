@@ -1,0 +1,15 @@
+{
+    "pages": [
+        "pages/courses/courses",
+        "pages/index/index",
+        "pages/course/course",
+
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#2A98EF",
+        "navigationBarTitleText": "华夏大地学习",
+        "navigationBarTextStyle": "#FFF"
+    }
+}

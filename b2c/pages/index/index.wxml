@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- 轮播图 -->
+    <swiper indicator-dots="{{true}}" circular="{{true}}" autoplay="{{false}}" interval="2000" duration="1000">
+        <swiper-item wx:for="{{banners}}" wx:for-item="banner" wx:key="{{banner.bannerId}}">
+            <navigator url="/pages/course/course?courseId=1">
+                <image src="{{banner.url}}" class="slide-image" mode="aspectFill" style="width: 100%;"/>
+            </navigator>
+        </swiper-item>
+    </swiper>
+
+    <view class="category" wx:for-items="{{categories}}" wx:for-item="category" wx:key="{{category.categoryId}}">
+        <!-- 目录的名字 -->
+        <view class="category-name-bar">
+            <view class="category-name">{{category.categoryName}}</view>
+        </view>
+        <!-- 同一个目录下的前 4 个课程 -->
+        <view class="courses">
+            <!-- 课程 -->
+            <view class="course" wx:for-items="{{category.courses}}" wx:for-item="course" wx:key="{{course.courseId}}">
+                <navigator url="/pages/course/course?courseId={{course.courseId}}">
+                    <image class="course-cover" src="{{course.imageURL}}" mode="aspectFill" style="width: 100%;"/>
+                    <view class="course-name elide">{{course.title}}</view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>
