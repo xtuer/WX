@@ -1,20 +1,20 @@
-var URLs = require('../../utils/urls.js').URLs;
-var MOC = require('../../utils/moc.js').MOC;
+var Urls = require('../../utils/urls.js').Urls;
+var Moc  = require('../../utils/moc.js').Moc;
 
 Page({
     data: {
-        banners: MOC.banners,
-        categories: MOC.categories
+        banners:    Moc.banners,
+        categories: Moc.categories
     },
     onLoad: function(options) {
-        var x = MOC.dev ? '' : this.init(options);
+        var x = Moc.moc ? '' : this.init(options);
     },
     init: function(options) {
         var self = this;
 
         // 向服务器请求主页显示的信息，包括轮播图 Banner，目录 Category 及其下面的课程信息
         wx.request({
-            url: URLs.REST_HOME,
+            url: Urls.REST_HOME,
             success: function(response) {
                 var result = response.data;
 

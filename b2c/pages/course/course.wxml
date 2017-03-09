@@ -1,7 +1,7 @@
 <view class="container">
     <!-- 播放器 -->
     <view class="player">
-        <video id="courseVideo" src="{{course.video}}" controls></video>
+        <video id="courseVideo" src="{{course.videoURL}}" controls></video>
     </view>
 
     <!-- 作者信息，课程详情，评论放在可滚动的 view 中，滚动时播放器，评论输入区不动 -->
@@ -9,7 +9,7 @@
         <!-- 作者信息 -->
         <view class="author-box row">
             <view class="title">作者:</view>
-            <view class="author">{{course.author}}</view>
+            <view class="author">{{course.instructor}}</view>
         </view>
 
         <!-- 课程详情描述 -->
@@ -27,7 +27,7 @@
                 <!-- 用户头像和名字 -->
                 <view class="comment-user">
                     <image class="user-image" mode="aspectFix" src="{{comment.userImage}}"/>
-                    <view class="username elide">{{comment.user}}</view>
+                    <view class="username elide">{{comment.userName}}</view>
                 </view>
                 <!-- 评论的内容 -->
                 <view class="comment">{{comment.content}}</view>
@@ -37,7 +37,7 @@
 
     <!-- 输入评论 -->
     <view class="input-box">
-        <input bindinput="bindInputComment" placeholder="请输入评论……"/>
-        <button type="default" plain="{{true}}" bindtap="submitComment">评论</button>
+        <input value="{{newComment}}" bindinput="bindNewComment" placeholder="请输入评论……"/>
+        <button bindtap="submitComment" type="default" plain="{{true}}">评论</button>
     </view>
 </view>
