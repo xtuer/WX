@@ -25,19 +25,19 @@
             <view class="title">评论:</view>
             <view class="comment-box" wx:for="{{comments}}" wx:for-item="comment" wx:key="{{comment.commentId}}">
                 <!-- 用户头像和名字 -->
-                <view class="comment-user">
+                <view class="comment-username">
                     <image class="user-image" mode="aspectFix" src="{{comment.userImage}}"/>
                     <view class="username elide">{{comment.userName}}</view>
                 </view>
                 <!-- 评论的内容 -->
-                <view class="comment">{{comment.content}}</view>
+                <view class="comment-content">{{comment.commentContent}}</view>
             </view>
         </view>
     </scroll-view>
 
     <!-- 输入评论 -->
     <view class="input-box">
-        <input value="{{newComment}}" bindinput="bindNewComment" placeholder="请输入评论……"/>
+        <input value="{{newComment}}" bindinput="bindNewComment" placeholder="请输入评论……" focus="{{true}}" maxlength="140"/>
         <button bindtap="submitComment" type="default" plain="{{true}}">评论</button>
     </view>
 </view>

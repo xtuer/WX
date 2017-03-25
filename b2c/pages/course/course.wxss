@@ -26,7 +26,7 @@
     line-height: 40rpx;
 }
 
-.author, .discription, .comment {
+.author, .discription, .comment-content {
     flex: 1;
     font-size: 30rpx;
     line-height: 40rpx;
@@ -45,7 +45,7 @@
     margin-top: 20rpx;
 }
 
-.comment-box .comment-user {
+.comment-box .comment-username {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,7 +68,7 @@
     border-radius: 4rpx;
 }
 
-.comment-box .comment {
+.comment-box .comment-content {
     position: relative;
     color: #888888;
     margin-left: 15rpx;
@@ -79,7 +79,7 @@
 }
 
 /* 评论前面的小箭头 */
-.comment::before {
+.comment-content::before {
     content: "";
     position: absolute;
     width: 13rpx;

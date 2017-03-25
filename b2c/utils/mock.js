@@ -1,8 +1,8 @@
 var Config = require('config.js');
 
 // 开发环境中的虚拟数据
-var MOC = {
-    moc: true,
+var MOCK = {
+    yes: true,
     banners: [
         {
             bannerId: 1,
@@ -97,42 +97,42 @@ var MOC = {
             commentId: 1,
             userName: '公孙二狗',
             userImage: 'http://wx.qlogo.cn/mmhead/Q3auHgzwzM60WxuzrRMAEvVJlXKUWic0bNZa4tpXzE8muV5nX1F26hw/132',
-            content: '大圣，此去欲何？踏南天，碎凌霄。若一去不回……？便一去不回！'
+            commentContent: '大圣，此去欲何？踏南天，碎凌霄。若一去不回……？便一去不回！'
         },
         {
             courseId: 1,
             commentId: 2,
             userName: '道格拉斯·狗',
             userImage: '/image/user.png',
-            content: 'Would you know my name if I saw you in heaven?'
+            commentContent: 'Would you know my name if I saw you in heaven?'
         },
         {
             courseId: 1,
             commentId: 2,
             userName: 'Alice',
             userImage: '/image/user.png',
-            content: 'Begging please 求饶'
+            commentContent: 'Begging please 求饶'
         },
         {
             courseId: 1,
             commentId: 2,
             userName: 'Alice',
             userImage: '/image/user.png',
-            content: '沙哑的嗓音，伤感的旋律'
+            commentContent: '沙哑的嗓音，伤感的旋律'
         },
         {
             courseId: 1,
             commentId: 2,
             userName: 'Alice',
             userImage: '/image/user.png',
-            content: '最后一个模块'
+            commentContent: '最后一个模块'
         }
     ]
 };
 
 // 和 MOC 中的数据一一对应
-var EMPTY_MOC = {
-    moc: false,
+var EMPTY_MOCK = {
+    yes: false,
     banners: [],
     categories: [],
     course: null,
@@ -140,5 +140,5 @@ var EMPTY_MOC = {
 };
 
 module.exports = {
-    Moc: Config.moc ? MOC : EMPTY_MOC
+    Mock: Config.mock ? MOCK : EMPTY_MOCK
 };

@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="top"></view>
+    <scroll-view scroll-y="true">
+        <view class="box-item box-r"></view>
+        <view class="box-item box-g"></view>
+        <view class="box-item box-b"></view>
+        <view class="box-item box-y"></view>
+    </scroll-view>
+    <view class="bottom"></view>
+</view>

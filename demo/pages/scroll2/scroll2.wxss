@@ -1,0 +1,41 @@
+
+.container {
+    padding: 0;
+}
+
+.top {
+    width: 100%;
+    height: 400rpx;
+    background: gray;
+}
+
+.bottom {
+    width: 100%;
+    height: 100rpx;
+    background: gray;
+}
+
+scroll-view {
+    flex: 1;
+    height: 755rpx;
+}
+
+.box-item {
+    height: 250rpx;
+}
+
+.box-r {
+    background: red;
+}
+
+.box-g {
+    background: green;
+}
+
+.box-b {
+    background: blue;
+}
+
+.box-y {
+    background: yellow;
+}

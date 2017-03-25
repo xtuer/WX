@@ -12,7 +12,7 @@
         "pages/index/index",
       	
         // 添加下一行后，微信web开发者工具发现 app.json 变化了，会自动的创建
-        //   目录 course/course
+        //   course 目录
         //   course.wxml
         //   course.wxss
         //   course.js

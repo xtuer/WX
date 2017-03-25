@@ -1,13 +1,13 @@
 var Urls = require('../../utils/urls.js').Urls;
-var Moc  = require('../../utils/moc.js').Moc;
+var Mock = require('../../utils/mock.js').Mock;
 var Util = require('../../utils/util.js');
 
 Page({
     data: {
-        courses: Moc.coursesOfCategory
+        courses: Mock.coursesOfCategory
     },
     onLoad: function(options) {
-        var x = Moc.moc ? '' : this.init(options);
+        var x = Mock.yes ? '' : this.init(options);
         wx.setNavigationBarTitle({title: '课程列表 - ' + options.categoryName});
     },
     init: function(options) {

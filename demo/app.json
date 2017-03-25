@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/scroll2/scroll2",
     "pages/html/html",
     "pages/video/video",
     "pages/audio/audio",
@@ -8,10 +9,9 @@
     "pages/icon/icon",
     "pages/index/index",
     "pages/scroll/scroll",
-    
     "pages/picker/picker",
     "pages/multiply/multiply",
-    
+
     "pages/flex/flex",
     "pages/logs/logs"
   ],

@@ -1,13 +1,13 @@
 var Urls = require('../../utils/urls.js').Urls;
-var Moc  = require('../../utils/moc.js').Moc;
+var Mock = require('../../utils/mock.js').Mock;
 
 Page({
     data: {
-        banners:    Moc.banners,
-        categories: Moc.categories
+        banners:    Mock.banners,
+        categories: Mock.categories
     },
     onLoad: function(options) {
-        var x = Moc.moc ? '' : this.init(options);
+        var x = Mock.yes ? '' : this.init(options);
     },
     init: function(options) {
         var self = this;
