@@ -3,7 +3,7 @@
     <!-- 轮播图 -->
     <swiper indicator-dots="{{true}}" circular="{{true}}" autoplay="{{true}}" interval="4000" duration="1000">
         <swiper-item wx:for="{{banners}}" wx:for-item="banner" wx:key="{{banner.bannerId}}">
-            <navigator url="/pages/course/course?courseId=1">
+            <navigator url="/pages/course/course?courseId={{banner.target}}">
                 <image src="{{banner.url}}" class="slide-image" mode="aspectFill" style="width: 100%;"/>
             </navigator>
         </swiper-item>

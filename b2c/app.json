@@ -2,13 +2,12 @@
     "pages": [
         "pages/index/index",
         "pages/course/course",
-
         "pages/courses/courses"
     ],
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#2A98EF",
-        "navigationBarTitleText": "华夏大地学习",
+        "navigationBarTitleText": "华夏大地免费课",
         "navigationBarTextStyle": "#FFF"
     }
 }

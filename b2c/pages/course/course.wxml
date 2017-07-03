@@ -1,7 +1,7 @@
 <view class="container">
     <!-- 播放器 -->
     <view class="player">
-        <video id="courseVideo" src="{{course.videoURL}}" controls></video>
+        <video id="courseVideo" src="{{course.videoURL}}" controls poster="{{course.imageURL}}" autoplay></video>
     </view>
 
     <!-- 作者信息，课程详情，评论放在可滚动的 view 中，滚动时播放器，评论输入区不动 -->
@@ -37,7 +37,7 @@
 
     <!-- 输入评论 -->
     <view class="input-box">
-        <input value="{{newComment}}" bindinput="bindNewComment" placeholder="请输入评论……" focus="{{true}}" maxlength="140"/>
+        <input value="{{newComment}}" bindinput="bindNewComment" placeholder="请输入评论……" maxlength="140"/>
         <button bindtap="submitComment" type="default" plain="{{true}}">评论</button>
     </view>
 </view>

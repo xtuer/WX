@@ -8,8 +8,27 @@ var MOCK = {
             bannerId: 1,
             type: 5,
             weight: 14,
-            target: 'course',
+            target: 1,
+            type: 'course',
+            url: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+            description: ''
+        },
+        {
+            bannerId: 2,
+            type: 5,
+            weight: 14,
+            target: 2,
+            type: 'course',
             url: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+            description: ''
+        },
+        {
+            bannerId: 3,
+            type: 5,
+            weight: 14,
+            target: 3,
+            type: 'course',
+            url: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
             description: ''
         }
     ],
