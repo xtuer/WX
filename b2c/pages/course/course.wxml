@@ -1,7 +1,8 @@
 <view class="container">
     <!-- 播放器 -->
     <view class="player">
-        <video id="courseVideo" src="{{course.videoURL}}" controls poster="{{course.imageURL}}" autoplay></video>
+        <video id="courseVideo" src="{{course.videoURL}}" poster="{{course.imageURL}}"
+            bindtimeupdate="updateTime" bindplay="play" controls autoplay></video>
     </view>
 
     <!-- 作者信息，课程详情，评论放在可滚动的 view 中，滚动时播放器，评论输入区不动 -->

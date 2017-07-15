@@ -13,7 +13,7 @@ App({
                 success: function() {
                     wx.getUserInfo({
                         success: function(res) {
-                            console.log(res);
+                            // console.log(res);
                             self.login(res.userInfo, cb);
                         }
                     });

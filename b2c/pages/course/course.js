@@ -9,7 +9,9 @@ Page({
         course:     Mock.course,   // 课程的信息
         comments:   Mock.comments, // 课程的评论
         courseId:   0,
-        newComment: ''
+        newComment: '',
+        player: null,
+        firstPlay: true
     },
 
     // 把用户输入的评论保存到变量里
@@ -54,6 +56,7 @@ Page({
     onLoad: function(options) {
         this.setData({courseId: options.courseId});
         var x = Mock.yes ? '' : this.init(options);
+        this.setData({player: wx.createVideoContext('courseVideo')});
     },
     init: function(options) {
         var self = this;
@@ -83,5 +86,24 @@ Page({
                 }
             }
         });
+    },
+    play: function(e) {
+        // 第一次播放时恢复播放器位置
+        if (this.data.firstPlay) {
+            try {
+                var time = wx.getStorageSync('video_' + this.data.courseId + '_time');
+                if (time) {
+                    this.data.player.seek(time);
+                }
+            } catch (event) {
+                console.log(event);
+            }
+
+            this.data.firstPlay = false;
+        }
+    },
+    updateTime: function(e) {
+        var key = 'video_' + this.data.courseId + '_time';
+        wx.setStorageSync(key, e.detail.currentTime);
     }
 });
